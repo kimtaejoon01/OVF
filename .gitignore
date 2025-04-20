@@ -1,0 +1,11 @@
+__pycache__/
+sample_dicom/
+visualize.py
+visualize_vertebra.py
+
+best_checkpoint/
+
+models/
+
+best_checkpoint/use_clinical_0.pth
+best_checkpoint/use_clinical_1.pth
