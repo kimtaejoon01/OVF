@@ -222,6 +222,11 @@ def main():
 
     # ───── 4단계: 예측 ─────
     if len(st.session_state.kps) == 6:
+        kp_np = np.array(st.session_state.kps, np.int32)
+        bb = get_bbox(kp_np, 1.5)
+ 
+        if st.button("크롭된 이미지 보기"):
+             st.image(vis_crop(arr, kf, kp_np, bb), caption="크롭 확인",width=400)
 
         # 임상 정보 입력 (use_clinical==True이면)
         meta = None
