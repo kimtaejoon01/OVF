@@ -100,6 +100,5 @@ wandb==0.19.9
 wcwidth==0.2.13
 zipp==3.21.0
 streamlit==1.31.1
-Pillow==10.2.0
 requests>=2.0
 gdown>=5.0
